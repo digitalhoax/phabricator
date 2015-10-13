@@ -1,5 +1,5 @@
 #!/bin/bash
 
 # Run Postfix
-systemctl enable postfix.service
-systemctl start postfix.service
+export SYSTEMD_NO_WRAP=true
+/etc/init.d/postfix start
