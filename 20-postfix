@@ -1,5 +1,5 @@
 #!/bin/bash
 
 # Run Postfix
-/etc/init.d/postfix start
-
+systemctl enable postfix.service
+systemctl start postfix.service
